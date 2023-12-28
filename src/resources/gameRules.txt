@@ -1,0 +1,17 @@
+In this game, your objective is
+to navigate without crashing into
+the walls or the ground.
+
+Your character has
+the ability to leap into the air
+by simply tapping the space bar.
+Otherwise, the bat will
+fall and hit the ground.
+
+To pause a game you have to
+click ESC button.
+
+After each game you can enter
+your nickname to save your score
+in the leaderboards, where
+top 10 scores are listed.
