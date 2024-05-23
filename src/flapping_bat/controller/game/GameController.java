@@ -3,13 +3,13 @@ package flapping_bat.controller.game;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import flapping_bat.AppMVC;
-import flapping_bat.controller.Controller;
+import flapping_bat.controller.ControllerText;
 import flapping_bat.model.Game;
 import flapping_bat.model.enums.AppStatus;
 
 import java.io.IOException;
 
-public class GameController extends Controller<Game> {
+public class GameController extends ControllerText<Game> {
     private final PlayerController playerController;
     private final WallController wallController;
     private final WallCreatorContoller wallCreatorContoller;

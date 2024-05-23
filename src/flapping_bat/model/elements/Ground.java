@@ -1,6 +1,6 @@
 package flapping_bat.model.elements;
 
-import flapping_bat.textGUI.LanternaTextGUI;
+import flapping_bat.GUI.LanternaTextGUI;
 import flapping_bat.model.Position;
 
 import java.util.ArrayList;

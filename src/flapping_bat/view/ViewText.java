@@ -1,12 +1,12 @@
 package flapping_bat.view;
 
-import flapping_bat.textGUI.LanternaTextGUI;
+import flapping_bat.GUI.LanternaTextGUI;
 
 import java.io.IOException;
 
-public abstract class View<T> {
+public abstract class ViewText<T> {
     private final T model;
-    public View(T model) {
+    public ViewText(T model) {
         this.model = model;
     }
     public T getModel() {
@@ -19,5 +19,5 @@ public abstract class View<T> {
         textGUI.refresh();
     }
 
-    protected abstract void drawElements(LanternaTextGUI gui);
+    protected abstract void drawElements(LanternaTextGUI textGUI);
 }

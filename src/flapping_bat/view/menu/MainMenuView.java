@@ -1,9 +1,9 @@
 package flapping_bat.view.menu;
 
+import flapping_bat.GUI.LanternaTextGUI;
 import flapping_bat.model.Position;
 import flapping_bat.model.enums.Colors;
 import flapping_bat.model.menu.MainMenu;
-import flapping_bat.textGUI.LanternaTextGUI;
 
 public class MainMenuView extends MenuView<MainMenu> {
     public MainMenuView(MainMenu mainMenu) {
@@ -11,7 +11,7 @@ public class MainMenuView extends MenuView<MainMenu> {
     }
 
     @Override
-    protected void drawInsideElements(LanternaTextGUI lanternaTextGUI) {
-        drawTitle(lanternaTextGUI, "Main Menu", Colors.ORANGE.getHex());
+    protected void drawInsideElements(LanternaTextGUI textGUI) {
+        drawTitle(textGUI, "Main Menu", Colors.ORANGE.getHex());
     }
 }

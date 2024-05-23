@@ -2,13 +2,13 @@ package flapping_bat.controller.game;
 
 import com.googlecode.lanterna.input.KeyStroke;
 import flapping_bat.AppMVC;
-import flapping_bat.controller.Controller;
+import flapping_bat.controller.ControllerText;
 import flapping_bat.model.Game;
 import flapping_bat.model.elements.Wall;
 
 import java.util.Iterator;
 
-public class WallController extends Controller<Game> {
+public class WallController extends ControllerText<Game> {
     public WallController(Game game)
     {
         super(game);

@@ -1,16 +1,16 @@
 package flapping_bat.controller.game;
 
 import flapping_bat.AppMVC;
-import flapping_bat.textGUI.LanternaTextGUI;
+import flapping_bat.GUI.LanternaTextGUI;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
-import flapping_bat.controller.Controller;
+import flapping_bat.controller.ControllerText;
 import flapping_bat.model.Game;
 import flapping_bat.model.Position;
 import flapping_bat.model.elements.Collidable;
 import flapping_bat.model.elements.Player;
 
-public class PlayerController extends Controller<Game> {
+public class PlayerController extends ControllerText<Game> {
     private final Player player;
     private int waitingCounter = 0;
 

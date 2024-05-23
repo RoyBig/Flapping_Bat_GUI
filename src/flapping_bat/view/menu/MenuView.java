@@ -1,12 +1,12 @@
 package flapping_bat.view.menu;
 
+import flapping_bat.GUI.LanternaTextGUI;
 import flapping_bat.model.Position;
 import flapping_bat.model.enums.Colors;
 import flapping_bat.model.menu.Menu;
-import flapping_bat.textGUI.LanternaTextGUI;
-import flapping_bat.view.View;
+import flapping_bat.view.ViewText;
 
-public abstract class MenuView<T extends Menu> extends View<T> {
+public abstract class MenuView<T extends Menu> extends ViewText<T> {
     private final Integer options_x;
     private final Integer options_y;
 
@@ -16,12 +16,12 @@ public abstract class MenuView<T extends Menu> extends View<T> {
         this.options_y = optionsPosition.getY();
     }
 
-    protected void drawElements(LanternaTextGUI lanternaTextGUI) {
-        lanternaTextGUI.paintBackground(Colors.DARK.getHex());
+    protected void drawElements(LanternaTextGUI textGUI) {
+        textGUI.paintBackground(Colors.DARK.getHex());
 
-        drawOptions(lanternaTextGUI);
+        drawOptions(textGUI);
 
-        drawInsideElements(lanternaTextGUI);
+        drawInsideElements(textGUI);
     }
 
     public void drawOptions(LanternaTextGUI textGUI) {
@@ -42,5 +42,5 @@ public abstract class MenuView<T extends Menu> extends View<T> {
         textGUI.drawText(position, text, color, Colors.DARK.getHex());
     }
 
-    abstract protected void drawInsideElements(LanternaTextGUI lanternaTextGUI);
+    abstract protected void drawInsideElements(LanternaTextGUI textGUI);
 }

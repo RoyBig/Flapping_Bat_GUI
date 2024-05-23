@@ -1,15 +1,15 @@
 package flapping_bat.view.game;
 
-import flapping_bat.textGUI.LanternaTextGUI;
+import flapping_bat.GUI.LanternaTextGUI;
 import flapping_bat.model.Game;
 import flapping_bat.model.Position;
 import flapping_bat.model.elements.Element;
 import flapping_bat.model.enums.Colors;
-import flapping_bat.view.View;
+import flapping_bat.view.ViewText;
 
 import java.util.List;
 
-public class GameView extends View<Game> {
+public class GameView extends ViewText<Game> {
     public GameView(Game game){
         super(game);
     }
@@ -38,7 +38,7 @@ public class GameView extends View<Game> {
     }
 
 
-    private void drawSky(LanternaTextGUI cli) {
-        cli.paintBackground(Colors.STATE_BLUE.getHex());
+    private void drawSky(LanternaTextGUI textGUI) {
+        textGUI.paintBackground(Colors.STATE_BLUE.getHex());
     }
 }

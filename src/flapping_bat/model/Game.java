@@ -1,6 +1,6 @@
 package flapping_bat.model;
 
-import flapping_bat.textGUI.LanternaTextGUI;
+import flapping_bat.GUI.LanternaTextGUI;
 import flapping_bat.model.elements.Ground;
 import flapping_bat.model.elements.Player;
 import flapping_bat.model.elements.Wall;

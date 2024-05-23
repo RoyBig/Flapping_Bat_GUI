@@ -3,13 +3,13 @@ package flapping_bat.controller.menu;
 import com.googlecode.lanterna.input.KeyStroke;
 import com.googlecode.lanterna.input.KeyType;
 import flapping_bat.AppMVC;
-import flapping_bat.controller.Controller;
+import flapping_bat.controller.ControllerText;
 import flapping_bat.model.menu.Menu;
 
 import java.io.IOException;
 ;
 
-public abstract class MenuController<T extends Menu> extends Controller<T> implements IMenu {
+public abstract class MenuController<T extends Menu> extends ControllerText<T> implements IMenu {
     public MenuController(T model) {
         super(model);
     }
